@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clips — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f7f5f1; --surface: #ffffff; --ink: #23201b;
+    --ink-secondary: #57524a; --border: rgba(35,32,27,0.12);
+    --accent: #a8752c; --accent-bg: #f3e6cc;
+    --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171f; --surface: #1b1f2a; --ink: #ece9e2;
+      --ink-secondary: #a9a49a; --border: rgba(236,233,226,0.12);
+      --accent: #d9a441; --accent-bg: rgba(217,164,65,0.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .page {
+    background: var(--bg); color: var(--ink); font-family: var(--font-sans);
+    min-height: 100vh; padding: 3rem 1.25rem 4rem;
+  }
+  .doc {
+    max-width: 640px; margin: 0 auto; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: clamp(1.5rem, 5vw, 3rem);
+  }
+  .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 8px;
+    background: var(--accent-bg); color: var(--accent);
+    font-family: var(--font-mono); font-weight: 700; font-size: 13px;
+    margin-bottom: 1.25rem;
+  }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; }
+  .updated { font-size: 13px; color: var(--ink-secondary); margin: 0 0 2rem; }
+  h2 { font-size: 16px; font-weight: 600; margin: 2rem 0 0.5rem; }
+  p, li { font-size: 15px; line-height: 1.65; color: var(--ink-secondary); }
+  ul { padding-left: 1.2rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="doc">
+    <span class="mark">FC</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Clips &middot; last updated August 2026</p>
+
+    <p>Clips is a personal-use application, connected to a single TikTok account by its owner. This policy explains what data the app accesses and how it's handled.</p>
+
+    <h2>What we access</h2>
+    <p>Through TikTok's API, Clips requests only what's needed to publish video content to the connected account on the owner's behalf &mdash; basic profile information and video-posting permission. It does not access data belonging to any other TikTok user.</p>
+
+    <h2>What we store</h2>
+    <p>The app stores the OAuth access and refresh tokens issued by TikTok for the connected account. These are kept locally on the account owner's own device and are not transmitted to, or shared with, any third party or external server.</p>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We don't collect, sell, or share data about other TikTok users.</li>
+      <li>We don't use the connected account's data for advertising or analytics.</li>
+      <li>We don't retain data beyond what's needed to operate the app.</li>
+    </ul>
+
+    <h2>Revoking access</h2>
+    <p>The account owner can revoke this app's access at any time from TikTok's account settings, or by deleting the locally stored tokens.</p>
+
+    <h2>Contact</h2>
+    <p>Questions can be directed to <a href="mailto:domantas.rem@gmail.com">domantas.rem@gmail.com</a>.</p>
+  </div>
+</div>
+</body>
+</html>
