@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clips — Authorization Complete</title>
+<style>
+  :root {
+    --bg: #f7f5f1; --surface: #ffffff; --ink: #23201b;
+    --ink-secondary: #57524a; --border: rgba(35,32,27,0.12);
+    --accent: #a8752c; --accent-bg: #f3e6cc;
+    --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171f; --surface: #1b1f2a; --ink: #ece9e2;
+      --ink-secondary: #a9a49a; --border: rgba(236,233,226,0.12);
+      --accent: #d9a441; --accent-bg: rgba(217,164,65,0.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .page {
+    background: var(--bg); color: var(--ink); font-family: var(--font-sans);
+    min-height: 100vh; padding: 3rem 1.25rem 4rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .doc {
+    max-width: 560px; margin: 0 auto; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: clamp(1.5rem, 5vw, 3rem); width: 100%;
+  }
+  .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 8px;
+    background: var(--accent-bg); color: var(--accent);
+    font-family: var(--font-mono); font-weight: 700; font-size: 13px;
+    margin-bottom: 1.25rem;
+  }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  p { font-size: 15px; line-height: 1.6; color: var(--ink-secondary); }
+  .field { margin-top: 1.5rem; }
+  .field label { display: block; font-size: 12px; color: var(--ink-secondary); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .value {
+    font-family: var(--font-mono); font-size: 13px; background: var(--accent-bg);
+    border-radius: 8px; padding: 0.75rem 1rem; word-break: break-all; color: var(--ink);
+  }
+  .empty { color: var(--ink-secondary); font-style: italic; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="doc">
+    <span class="mark">FC</span>
+    <h1>Authorization complete</h1>
+    <p>TikTok has redirected back here after authorization. The values below are read from this page's URL.</p>
+    <div class="field">
+      <label>Authorization code</label>
+      <div class="value" id="code">—</div>
+    </div>
+    <div class="field">
+      <label>State</label>
+      <div class="value" id="state">—</div>
+    </div>
+    <div class="field">
+      <label>Error (if any)</label>
+      <div class="value" id="error">—</div>
+    </div>
+  </div>
+</div>
+<script>
+  var params = new URLSearchParams(window.location.search);
+  function show(id, key) {
+    var el = document.getElementById(id);
+    var v = params.get(key);
+    el.textContent = v || "(none)";
+  }
+  show("code", "code");
+  show("state", "state");
+  show("error", "error");
+</script>
+</body>
+</html>
