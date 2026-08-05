@@ -1,0 +1,44 @@
+{
+  "videos": [
+    {
+      "id": "wayne-jet-dispute-2026-08-01",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "format": "short",
+      "title": "Lil Wayne's Private Jet Drama Just Got Messier",
+      "hook": "Lil Wayne's ex-assistant made a wild claim mid-air — now his own pilot is telling a very different story.",
+      "script": "Lil Wayne is in the middle of a legal fight that's getting messier by the week. According to court filings, his former assistant is accusing him of assaulting her during a private jet flight. But reports say Wayne's own pilot has now stepped into the case — and is reportedly disputing her account, describing a different version of what happened on that flight. None of these claims have been proven in court, so right now this is an active legal dispute, not a settled fact. We'll keep watching as more filings come in and update if either side's story holds up.",
+      "sources": ["HotNewHipHop", "TMZ Hip-Hop", "AllHipHop"],
+      "status": "drafted"
+    },
+    {
+      "id": "boosie-hookah-lawsuit-2026-08-01",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "format": "short",
+      "title": "Boosie Badazz Sued Over an Alleged Hookah Attack",
+      "hook": "A night out in Houston just turned into a lawsuit — and Boosie's at the center of it.",
+      "script": "A wild claim just landed on Boosie Badazz. According to a new lawsuit, a security guard says Boosie smashed a glass hookah over his head at Houston's Dome Nightclub, back in May. The alleged incident reportedly left the guard hurt, and now he's suing for damages. Boosie hasn't responded publicly yet, and none of this has been proven in court. But if it holds up, this could turn into one of the messiest legal fights of his year. We'll be tracking every update.",
+      "sources": ["TMZ Hip-Hop", "HotNewHipHop"],
+      "status": "drafted"
+    },
+    {
+      "id": "adamn-killa-arrest-me-daddy-2026-08-01",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "format": "short",
+      "title": "Chicago Rapper Walked Up To Police Yelling 'Arrest Me, Daddy'",
+      "hook": "This rapper WANTED to get arrested — and the internet cannot get over it.",
+      "script": "Okay, THIS is why the internet is losing it right now. Chicago rapper Adamn Killa walked straight up to police and National Guard members downtown, and instead of running, he started yelling 'arrest me, daddy.' On repeat. He interrupted an actual traffic stop just to do it. Police ended up cuffing him and holding him in the back of a squad car for about twenty minutes, then let him go. No charges. He basically asked to get arrested and still walked away clean. Clips of the moment are already spreading everywhere, and honestly, this might be the most unbothered arrest attempt we've seen all year.",
+      "sources": ["Chicago Sun-Times"],
+      "status": "drafted"
+    },
+    {
+      "id": "diddy-prison-fight-solitary-2026-08-05",
+      "createdAt": "2026-08-05T00:00:00Z",
+      "format": "long",
+      "title": "Diddy Just Got Into An Actual Fistfight In Prison",
+      "hook": "",
+      "script": "Okay, so apparently prison isn't slowing Diddy down at all, because this man is out here throwing hands. Multiple outlets are now reporting that Sean Combs got into a real, physical fight with another inmate at FCI Fort Dix, the federal prison in New Jersey where he's serving out his sentence. And no, this isn't some blurry rumor from a random Instagram page — Fox News, TMZ, NewsNation, and Yahoo are all reporting versions of the same story, which is usually the sign that something actually happened.\n\nHere's what's being said went down. According to these reports, another inmate started dissing Diddy — talking reckless, however that actually looked inside a federal prison yard — and instead of letting it slide, Diddy stepped to him. It's being described as a real scuffle: pushing, jabs being thrown, the whole thing. Sources say Diddy 'held his own' in the fight, which, love him or hate him, is not the sentence you expect to read about a guy who's spent the last however many years surrounded by lawyers and stylists.\n\nPrison staff broke it up fast, and here's the part that makes this a real story and not just a schoolyard scrap: Diddy was reportedly tossed straight into solitary confinement afterward. That's not a slap on the wrist. That's 'the hole,' as people call it — isolated, locked down, away from the general population. It's not clear from the reporting exactly how long he was in there, or if he's already back out, because both FCI Fort Dix and the Federal Bureau of Prisons are staying quiet, citing privacy and security. Which, fair, that's standard protocol for federal prisons — they don't confirm specifics on incidents like this.\n\nNow here's why this is hitting different than your average prison rumor. Diddy is serving a 50 month sentence, and going into this, the expectation from a lot of people — including, reportedly, former Fort Dix inmate Joe Giudice, yes, that Joe Giudice — was that Diddy might have a relatively easy, low-key run at Fort Dix. But Giudice himself has apparently warned that the reality inside is a lot rougher than people assume, with actual violence and gang activity being part of daily life there. So if this fight is accurate, it kind of validates that warning immediately.\n\nAnd that's really the tension in this whole story. On one side you've got the image of Diddy that's been built for decades — the mogul, the guy at the Met Gala, the guy who owned an entire record label. And on the other side you've now got reports of him literally brawling with another inmate over disrespect, getting thrown in solitary like anybody else in there. There's no VIP treatment in a fistfight. No entourage stepping in. Just him, another inmate, and prison guards pulling them apart.\n\nTo be clear about what we actually know versus what's still murky: the fight itself is being reported consistently across multiple outlets, so that part looks solid. What we don't have is official confirmation from the Bureau of Prisons, an exact date, or details on how long the solitary stint lasted or whether there will be any additional consequences — extra time added, a disciplinary hearing, any of that. So take this as a developing story, not a fully closed case.\n\nBut regardless of how the details shake out, the headline alone is wild: Diddy got disrespected in federal prison, and instead of staying out of it, he fought back. Whatever you think about everything that got him there in the first place, that's not nothing. We'll keep tracking this one and update if the Bureau of Prisons or Diddy's team says anything official.",
+      "sources": ["Fox News", "TMZ", "NewsNation", "Yahoo Entertainment"],
+      "status": "drafted"
+    }
+  ]
+}
