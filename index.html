@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Clips</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clips — how it works</title>
 <style>
   :root {
     --bg: #f7f5f1; --surface: #ffffff; --ink: #23201b;
@@ -23,13 +24,13 @@
   .page {
     background: var(--bg); color: var(--ink); font-family: var(--font-sans);
     min-height: 100vh; padding: 3rem 1.25rem 4rem;
-    display: flex; align-items: center; justify-content: center;
   }
   .doc {
-    max-width: 480px; margin: 0 auto; background: var(--surface);
+    max-width: 720px; margin: 0 auto; background: var(--surface);
     border: 1px solid var(--border); border-radius: 14px;
-    padding: clamp(1.5rem, 5vw, 3rem); text-align: center;
+    padding: clamp(1.5rem, 5vw, 3rem);
   }
+  .hero { text-align: center; margin-bottom: 2.5rem; }
   .mark {
     display: inline-flex; align-items: center; justify-content: center;
     width: 48px; height: 48px; border-radius: 10px;
@@ -37,19 +38,107 @@
     font-family: var(--font-mono); font-weight: 700; font-size: 18px;
     margin-bottom: 1.25rem;
   }
-  h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; }
-  p { font-size: 15px; line-height: 1.65; color: var(--ink-secondary); }
+  h1 { font-size: 26px; font-weight: 600; margin: 0 0 8px; }
+  .lede { font-size: 16px; line-height: 1.6; color: var(--ink-secondary); max-width: 480px; margin: 0 auto; }
+  h2 { font-size: 17px; font-weight: 600; margin: 2.5rem 0 0.75rem; }
+  h2:first-of-type { margin-top: 0; }
+  p, li { font-size: 15px; line-height: 1.7; color: var(--ink-secondary); }
+  ul { padding-left: 1.2rem; }
   a { color: var(--accent); }
-  nav { margin-top: 1.5rem; display: flex; gap: 1.5rem; justify-content: center; }
+  nav.legal { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; gap: 1.5rem; justify-content: center; }
+
+  .steps { display: flex; flex-direction: column; gap: 0; margin: 1.25rem 0; counter-reset: step; }
+  .step {
+    display: flex; gap: 16px; padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent-bg); color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono); font-size: 13px; font-weight: 700;
+    counter-increment: step;
+  }
+  .step-num::before { content: counter(step); }
+  .step-body h3 { font-size: 15px; font-weight: 600; margin: 0 0 3px; color: var(--ink); }
+  .step-body p { margin: 0; font-size: 14px; }
+
+  .gate {
+    margin: 1.5rem 0; padding: 1rem 1.25rem; border-radius: 10px;
+    background: var(--accent-bg); border: 1px solid var(--border);
+  }
+  .gate p { color: var(--ink); margin: 0; font-size: 14.5px; }
+  .gate strong { color: var(--accent); }
+
+  table.scopes { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 14px; }
+  table.scopes th, table.scopes td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  table.scopes th { color: var(--ink); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  table.scopes td { color: var(--ink-secondary); }
+  table.scopes code { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="page">
   <div class="doc">
-    <span class="mark">FC</span>
-    <h1>Clips</h1>
-    <p>A personal-use app that publishes video content to a single connected TikTok account on behalf of its owner.</p>
-    <nav>
+    <div class="hero">
+      <span class="mark">FC</span>
+      <h1>Clips</h1>
+      <p class="lede">A personal-use tool that turns public Twitch highlight clips into vertical video and prepares them for posting to a single connected TikTok account.</p>
+    </div>
+
+    <h2>What this is</h2>
+    <p>Clips is built and used by one person, for one TikTok account. It is not a public product — there is no sign-up, no other users, and no accounts other than the single one its owner has connected.</p>
+    <p>The goal is straightforward: keep a personal content channel supplied with edited short-form video without doing every editing step by hand, while making sure nothing goes out publicly without a human looking at it first.</p>
+
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num"></span>
+        <div class="step-body">
+          <h3>Source</h3>
+          <p>Searches public Twitch clip listings for short highlight clips matching a fixed set of topics, and adds them to a local queue.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num"></span>
+        <div class="step-body">
+          <h3>Build</h3>
+          <p>Downloads the source clip, crops it to vertical format, and burns in a caption card. This step only ever touches files on the owner's own machine.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num"></span>
+        <div class="step-body">
+          <h3>Combine</h3>
+          <p>Groups a handful of related clips from the same source into one longer compilation, since a single short clip usually runs under a minute on its own.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num"></span>
+        <div class="step-body">
+          <h3>Post as draft</h3>
+          <p>Uploads the finished video to the connected TikTok account's own inbox as a draft, using the Content Posting API. It does not publish anything automatically.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gate">
+      <p><strong>The account owner makes the last call.</strong> Every video Clips prepares lands as a private draft in the connected account's own TikTok inbox. Nothing is posted publicly by the app — the owner opens TikTok, reviews the draft, and decides whether to publish it.</p>
+    </div>
+
+    <h2>What it asks TikTok for</h2>
+    <table class="scopes">
+      <tr><th>Scope</th><th>Used for</th></tr>
+      <tr><td><code>user.info.basic</code></td><td>Confirming which account is connected, nothing more.</td></tr>
+      <tr><td><code>video.upload</code></td><td>Sending a finished video to that account's own draft inbox.</td></tr>
+    </table>
+    <p>Clips never reads or acts on any account other than the one its owner explicitly connects, and never touches another TikTok user's data.</p>
+
+    <h2>Source material</h2>
+    <p>Clips only draws from publicly available Twitch clips — short highlight moments that are already public and shareable on Twitch's own platform. It doesn't scrape private or restricted content.</p>
+
+    <nav class="legal">
       <a href="terms.html">Terms of Service</a>
       <a href="privacy.html">Privacy Policy</a>
     </nav>
